@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>hexo博客搭建超详细过程</title>
+      <link href="/2023/11/24/hexoBuild/"/>
+      <url>/2023/11/24/hexoBuild/</url>
+      
+        <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>从我入行以来，一直想搭建一个自己博客来记录自己的想法和遇到的问题。最近失业以后时间多了起来，花了大概一周的时间，把这个博客搭起来了，于是想写一篇文章来记录搭建的详细流程作为本站的一篇文章，这对于我而言也是一个新的开始！</p><p>以下是一些官方网站：</p><p>hexo: <a href="https://hexo.io/">https://hexo.io/</a></p><p>butterfly: <a href="https://github.com/jerryc127/hexo-theme-butterfly">https://github.com/jerryc127/hexo-theme-butterfly</a></p><p>vercel: <a href="https://vercel.com/">https://vercel.com</a></p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>搭建之前，我们需要提前有以下准备：</p><ul><li>安装了node环境</li><li>注册了github账号</li><li>安装了git</li><li>购买了自己的域名（可选）</li><li>安装了markdown编辑器（我使用的是typora）</li></ul><h1 id="Hexo初体验"><a href="#Hexo初体验" class="headerlink" title="Hexo初体验"></a>Hexo初体验</h1><p>Hexo是可以一个解析md文件，生成静态网页的博客框架，支持多种主题，而且支持部署到github page。我们先来体验一下。</p><p>在cmd中输入命令全局安装Hexo</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装完成后，输入命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p>如果跟下图一样出现版本号，表示安装成功。</p><p><img src="/2023/11/24/hexoBuild/image-20231124162529375.png" alt="image-20231124162529375"></p><p>在我们的工作目录打开cmd，执行<code>hexo init</code>创建项目</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init hexo-blog-demo(项目名)</span><br></pre></td></tr></table></figure><p><img src="/2023/11/24/hexoBuild/image-20231124200447068.png" alt="image-20231124200447068"></p><p>接下来进入到该项目下，较新版本的 hexo 在执行 <code>hexo init</code> 时会自行安装好依赖，因此不需要再额外执行<code>npm i</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">或者</span><br><span class="line">hexo serve</span><br></pre></td></tr></table></figure><p>打开<a href="http://localhost:4000/%E5%90%8E%EF%BC%8C%E5%B0%B1%E4%BC%9A%E7%9C%8B%E5%88%B0%E4%BD%A0%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E8%B7%91%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%81">http://localhost:4000/后，就会看到你的Hexo博客跑起来了！</a></p><blockquote><p>更多命令可以查看<a href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p></blockquote><h1 id="github-page配置"><a href="#github-page配置" class="headerlink" title="github page配置"></a>github page配置</h1><p>Hexo有个命令<code>hexo g</code>或者<code>hexo genarate</code>，会直接遍历项目中的静态文件来生成静态网页。将这些静态网页挂载到github page就可以直接访问，而不需要另外的服务器了。接下来我们来配置一下。</p><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>访问github，new 一个 repository。</p><blockquote><p>科学上网的重要性，包括后续有可能出现ssh连接超时等问题时，挂个代理试试</p></blockquote><p>注意仓库名一定要是<code>[用户名].github.io</code>，一定要这个格式，一定要是这个格式，一定要是这个格式，重要的事情说三遍！</p><p>然后仓库一定要是<code>pubilc</code>，仓库一定要是<code>pubilc</code>，仓库一定要是<code>pubilc</code>，这个也说三遍！</p><p><img src="/2023/11/24/hexoBuild/image-20231124202636255.png" alt="image-20231124202636255"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>post_test</title>
+      <link href="/2023/11/24/post-test/"/>
+      <url>/2023/11/24/post-test/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2023/11/24/post-test/image-20231124030828678.png" alt="image-20231124030828678"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test2</title>
       <link href="/2023/11/20/test5/"/>
       <url>/2023/11/20/test5/</url>
